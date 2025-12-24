@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IPL Special</title>
+    <script src="../data/JQuery-Lib/jquery-3.7.1.js"></script>
 </head>
+
 <body>
     <h1>IPL Special</h1>
+    <div class="hero_special"></div>
+
+    <script>
+        $('h1').css({
+            textAlign: 'center',
+            fontSize: '30px',
+            fontWeight: '800',
+            margin: '20px 0'
+        });
+    
+        $('.hero_special')
+            .prepend('<img src="../assets/images/IPL.webp" alt="IPL" class="hero_img">')
+            .append(
+                '<p class="hero_para">The Indian Premier League (IPL) is the most exciting T20 league in the world. From thrilling finishes to star-studded teams, IPL brings together talent, entertainment, and passion every season.</p>'
+            )
+            .append(
+                '<p class="hero_para">Explore all IPL teams, their history, titles, captains, and team identity. This section gives fans a clear understanding of each franchise and its journey.</p>'
+            )
+            .css({
+                width: '80%',
+                maxWidth: '600px',
+                padding: '15px 20px',
+                margin: '20px auto',
+                textAlign: 'center' 
+            });
+    
+        $('.hero_img').css({
+            display: 'block',
+            margin: '0 auto',
+            maxWidth: '100%'
+        });
+    </script>
+    
 </body>
+
 </html>
