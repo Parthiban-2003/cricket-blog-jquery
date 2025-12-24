@@ -36,3 +36,17 @@
         padding: 8px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .hero_main .unOrder_lists li {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_main .unOrder_lists li {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
